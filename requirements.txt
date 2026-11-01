@@ -1,0 +1,9 @@
+cryptography>=44,<51
+pqcrypto==1.0.0
+streamlit>=1.50,<2
+plotly>=5.24
+pandas>=2.0
+qiskit>=2.0,<3
+qiskit-aer>=0.18
+scipy>=1.14
+rustworkx>=0.15
