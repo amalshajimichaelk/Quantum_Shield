@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8
+kyber-py>=1.2
+dilithium-py>=1.4

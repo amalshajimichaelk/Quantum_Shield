@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ASSET-001",
+    "application_name": "Customer Web Portal (TLS 1.3 Termination)",
+    "current_algorithm": "RSA-2048",
+    "category": "Key Exchange",
+    "key_size": 2048,
+    "usage_type": "Data In-Transit (TLS)",
+    "data_classification": "Sensitive Financial Data",
+    "confidentiality_lifetime_years": 10,
+    "network_exposure": "Public Internet",
+    "constraints": "High request volume; packet MTU size sensitive"
+  },
+  {
+    "id": "ASSET-002",
+    "application_name": "Inter-Datacenter Core VPN Tunnel",
+    "current_algorithm": "ECDH (X25519)",
+    "category": "Key Exchange",
+    "key_size": 256,
+    "usage_type": "Data In-Transit (IPsec/WireGuard)",
+    "data_classification": "Confidential Enterprise Telemetry",
+    "confidentiality_lifetime_years": 15,
+    "network_exposure": "Public Internet (Encrypted Tunnel)",
+    "constraints": "Sub-millisecond handshake latency requirement"
+  },
+  {
+    "id": "ASSET-003",
+    "application_name": "Enterprise Firmware & Code Signing Authority",
+    "current_algorithm": "RSA-4096",
+    "category": "Digital Signature",
+    "key_size": 4096,
+    "usage_type": "Code Signing & Integrity Verification",
+    "data_classification": "Critical System Binaries",
+    "confidentiality_lifetime_years": 25,
+    "network_exposure": "Internal Isolated Network",
+    "constraints": "Embedded IoT memory limits; slow signature verification overhead"
+  },
+  {
+    "id": "ASSET-004",
+    "application_name": "Automated Legal Document Notarization",
+    "current_algorithm": "ECDSA (P-384)",
+    "category": "Digital Signature",
+    "key_size": 384,
+    "usage_type": "Digital Signatures & Non-Repudiation",
+    "data_classification": "Legal & Regulatory Contracts",
+    "confidentiality_lifetime_years": 30,
+    "network_exposure": "Internal Network with Partner Extranet",
+    "constraints": "Strict compliance with legal e-signature frameworks"
+  },
+  {
+    "id": "ASSET-005",
+    "application_name": "Healthcare Patient Records Database (Storage at Rest)",
+    "current_algorithm": "AES-256-GCM",
+    "category": "Symmetric Encryption",
+    "key_size": 256,
+    "usage_type": "Data At-Rest (Database Encryption)",
+    "data_classification": "Protected Health Information (PHI)",
+    "confidentiality_lifetime_years": 50,
+    "network_exposure": "Internal Private Subnet",
+    "constraints": "FIPS 140-3 validated HSM key storage required"
+  },
+  {
+    "id": "ASSET-006",
+    "application_name": "Legacy Point-of-Sale Payment Gateway",
+    "current_algorithm": "3DES",
+    "category": "Symmetric Encryption",
+    "key_size": 112,
+    "usage_type": "Legacy In-Transit & Local Storage",
+    "data_classification": "Payment Cardholder Data",
+    "confidentiality_lifetime_years": 7,
+    "network_exposure": "Retail Store WAN",
+    "constraints": "Legacy microcontrollers with limited RAM"
+  },
+  {
+    "id": "ASSET-007",
+    "application_name": "Next-Gen Defense Communications Uplink",
+    "current_algorithm": "Hybrid (X25519 + ML-KEM-768)",
+    "category": "Key Exchange",
+    "key_size": 1216,
+    "usage_type": "Secure Tactical Messaging",
+    "data_classification": "National Security Classified",
+    "confidentiality_lifetime_years": 40,
+    "network_exposure": "Public Satellite / Radio",
+    "constraints": "Zero tolerance for single-algorithm vulnerability"
+  }
+]
+
