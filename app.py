@@ -1,7 +1,16 @@
 """QuantumShield - Streamlit dashboard. Run: streamlit run app.py"""
 from __future__ import annotations
 
+import faulthandler
+faulthandler.enable()
+
 import os
+# Prevent Apache Arrow / mimalloc segmentation fault on secondary threads (Apache Arrow issue #50471)
+os.environ["ARROW_DEFAULT_MEMORY_POOL"] = "system"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+
 import platform
 import time
 from datetime import datetime
