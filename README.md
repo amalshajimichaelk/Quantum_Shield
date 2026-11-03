@@ -8,6 +8,7 @@
 
 > **Hackathon Submission:** Post-Quantum Cryptography for a Quantum-Safe Future  
 > **Repository:** [https://github.com/amalshajimichaelk/Quantum_Shield](https://github.com/amalshajimichaelk/Quantum_Shield)  
+> **Live App:** [https://quantumshield-404.streamlit.app/](https://quantumshield-404.streamlit.app/)   
 > **Engineered by:** Principal Software Engineer, PQC Architect & Quantum Computing Researcher  
 
 ---
